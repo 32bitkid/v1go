@@ -1,6 +1,6 @@
-package v1api_test
+package v1go_test
 
-import "github.com/32bitkid/v1api"
+import "github.com/32bitkid/v1go"
 import "testing"
 
 type Workitem struct {
@@ -11,8 +11,10 @@ func TestAssetLoader(t *testing.T) {
 	var workItems []Workitem
 	
 	t.Log(workItems)
-	if err := v1api.QueryFor(&workItems); err != nil {
+	if err := v1go.QueryFor(&workItems); err != nil {
 	  t.Fatal(err)
 	}
 	t.Log(workItems)
+	
+	
 }

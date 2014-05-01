@@ -1,4 +1,4 @@
-package v1api
+package v1go
 
 import "fmt"
 import "reflect"

@@ -1,17 +1,17 @@
-package v1api_test
+package v1go_test
 
-import "github.com/32bitkid/v1api"
+import "github.com/32bitkid/v1go"
 import "testing"
 
 func TestSomething(t *testing.T) {
 
-	status := v1api.QueryFrom("Status")
+	status := v1go.QueryFrom("Status")
 	status.Select("Name")
 
-	owners := v1api.QueryFrom("Owners")
+	owners := v1go.QueryFrom("Owners")
 	owners.Select("Name", "Nickname")
 
-	q := v1api.QueryFrom("Story")
+	q := v1go.QueryFrom("Story")
 
 	q.Select("Estimate", owners)
 	q.Where("Estimate", "1")
