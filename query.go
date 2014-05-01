@@ -69,5 +69,5 @@ func (q *query) SortDescending(token string) {
 }
 
 func (q *query) GroupBy(groups ...Query) {
-  q.Groups = append(q.Groups, groups...)
+	q.Groups = append(q.Groups, groups...)
 }

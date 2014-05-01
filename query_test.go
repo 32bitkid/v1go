@@ -4,10 +4,10 @@ import "github.com/32bitkid/v1api"
 import "testing"
 
 func TestSomething(t *testing.T) {
-  
-  status := v1api.QueryFrom("Status")
-  status.Select("Name")
-  
+
+	status := v1api.QueryFrom("Status")
+	status.Select("Name")
+
 	owners := v1api.QueryFrom("Owners")
 	owners.Select("Name", "Nickname")
 
